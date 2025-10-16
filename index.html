@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+<link rel="icon" type="image/x-icon" href="img/avatar.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <article data-testid="test-profile-card">
+        <div class="card-content">
+            <div class="profile-header">
+                <figure>
+                    <img data-testid="test-user-avatar"
+                        src="img/avatar.jpg"
+                        alt="Profile picture of Kazeem Fathiah">
+                </figure>
+
+                <div class="profile-info">
+                    <h2 data-testid="test-user-name">Kazeem Fathiah</h2>
+                    <p data-testid="test-user-bio">
+                        Full-stack developer and creative problem solver with a passion for building elegant solutions.
+                        When I'm not coding, you'll find me Reading and writing or experimenting with
+                        photography.
+                    </p>
+                    <div class="timestamp">
+                        <span>Timestamp: </span>
+                        <span data-testid="test-user-time" id="timestamp"></span>
+                        <span> ms</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav data-testid="test-user-social-links" aria-label="Social media links">
+                <h3>Connect with me</h3>
+                <ul>
+                    <li>
+                        <a href="https://x.com/FathiahKazeem" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Fathiah2006" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fathiah-kazeem-12261b277" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kazeem_fathiah/?igsh=b2R6bDh4NGQ5bTd5&utm_source=qr#" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lists-container">
+                <section data-testid="test-user-hobbies">
+                    <h3>Hobbies & Interests</h3>
+                    <ul>
+                        <li>Coding and trying new technologies</li>
+                        <li>Photography and visual storytelling</li>
+                        <li>Reading sci-fi novels</li>
+                        <li>Playing video games</li>
+                        <li>Cooking and Baking </li>
+                        <li>Learning new programming languages</li>
+                    </ul>
+                </section>
+
+                <section data-testid="test-user-dislikes">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li>Poorly documented code</li>
+                        <li>Traffic jams</li>
+                        <li>Cold weather</li>
+                        <li>Overcooked pasta</li>
+                        <li>Loud, crowded spaces</li>
+                        <li>Uninspired design</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
